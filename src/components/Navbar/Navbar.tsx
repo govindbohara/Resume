@@ -6,16 +6,18 @@ import * as styles from './navbar.styles'
 import routes from './routes'
 
 export const Navbar = () => {
-	const [scrollTop, setScrollTop] = useState(0)
-	const [clickedId, setClickedId] = useState('')
 	const [isScrolled, setIsScrolled] = useState(false)
 
+	/** Scroll to the given element as refrenced by its id whenver corresponding link is clicked */
+	const handleLinkClick = (id: string) => {
+		scrollToEl(id)
+	}
 	const routeList = routes.map(route => (
 		<li key={route.name}>
 			<button
 				type='button'
 				className={styles.button}
-				onClick={() => setClickedId(route.sectionId)}
+				onClick={() => handleLinkClick(route.sectionId)}
 			>
 				{route.name}
 			</button>
@@ -23,8 +25,7 @@ export const Navbar = () => {
 	))
 	useEffect(() => {
 		const handleScroll = () => {
-			setScrollTop(window.scrollY)
-			if (scrollTop > 50) {
+			if (window.scrollY > 50) {
 				setIsScrolled(true)
 			} else {
 				setIsScrolled(false)
@@ -32,12 +33,7 @@ export const Navbar = () => {
 		}
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
-	}, [scrollTop])
-	useEffect(() => {
-		if (clickedId) {
-			scrollToEl(clickedId)
-		}
-	}, [clickedId])
+	}, [isScrolled])
 	return (
 		<nav className={styles.navbar(isScrolled)}>
 			<Link href='/'>

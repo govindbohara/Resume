@@ -8,8 +8,8 @@ export const About = () => {
 		window.open('/CV-Govind_Bohara.pdf')
 	}
 	return (
-		<div className='min-h-screen section center' id='about'>
-			<div className='flex flex-col-reverse items-center justify-between min-w-full lg:flex-row'>
+		<div className='min-h-screen section' id='about'>
+			<div className='flex flex-col-reverse items-start justify-between min-w-full xl:items-center xl:flex-row'>
 				<div>
 					<span className='inline-block my-8 text-4xl font-bold'>🙍 About Me</span>
 					<div className='max-w-xl space-y-6 text-lg'>

@@ -30,7 +30,7 @@ export const navbar = (isBlurred: boolean) =>
 		'transition-all',
 		'duration-500',
 		'hidden',
-		'lg:flex',
+		'md:flex',
 		'lg:px-36',
 		'lg:py-6',
 		{ [blurred]: isBlurred }

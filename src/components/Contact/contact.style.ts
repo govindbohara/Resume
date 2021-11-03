@@ -15,7 +15,9 @@ export const contactDesc = classnames(
 export const formContainer = classnames(
 	'flex',
 	'flex-col',
-	'items-center',
+	'flex-1',
+	'items-start',
 	'justify-between',
+	'xl:items-center',
 	'lg:flex-row'
 )

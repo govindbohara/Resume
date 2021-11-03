@@ -21,7 +21,7 @@ const tabRoutes = [
 ]
 export const Tab = () => {
 	return (
-		<div className='fixed bottom-0 left-0 px-6 py-2 w-full visible lg:hidden'>
+		<div className='fixed bottom-0 left-0 px-6 py-2 w-full visible md:hidden'>
 			<div className='flex justify-between items-center bg-gray-900/75 backdrop-blur-md shadow-xl rounded-2xl p-3'>
 				{tabRoutes.map(tabRoute => (
 					<div
