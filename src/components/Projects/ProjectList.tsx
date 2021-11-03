@@ -8,7 +8,7 @@ type ProjectListProps = {
 export const ProjectList = ({ projects }: ProjectListProps) => {
 	return (
 		<div className='section' id='projects'>
-			<h3 className='text-4xl font-semibold'>☑️ Recent Projects</h3>
+			<h2 className='text-4xl font-semibold'>☑️ Recent Projects</h2>
 			<p className='mt-4 mb-12 text-lg text-gray-400'>
 				Here are some of my projects that i have recently worked on
 			</p>

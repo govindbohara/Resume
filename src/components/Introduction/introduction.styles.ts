@@ -11,7 +11,6 @@ export const headingTwo = classnames('mt-2', 'text-8xl', 'font-bold', 'lg:mt-0')
 export const textBox = classnames('max-w-xl', 'mt-6', 'mb-12')
 export const text = classnames(
 	'block',
-	'text-md',
 	'text-gray-400',
 	'font-semibold',
 	'leading-8',

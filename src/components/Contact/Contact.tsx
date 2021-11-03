@@ -25,7 +25,8 @@ export const Contact = () => {
 		initialValues,
 		validationSchema,
 		onSubmit: async values => {
-			const promise = fetch('http://localhost:3000/api/sendEmail', {
+			const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/sendEmail`
+			const promise = fetch(apiUrl, {
 				headers: {
 					'Content-Type': 'application/json',
 				},
@@ -109,7 +110,10 @@ export const Contact = () => {
 							''
 						)}
 					</div>
-					<button type='submit' className='w-full bg-green-700 link hover:bg-green-800'>
+					<button
+						type='submit'
+						className='w-full text-white bg-green-700 link hover:bg-green-800'
+					>
 						Contact Me
 					</button>
 				</form>

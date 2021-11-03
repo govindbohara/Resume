@@ -8,26 +8,26 @@ export const About = () => {
 		window.open('/CV-Govind_Bohara.pdf')
 	}
 	return (
-		<div className='section min-h-screen center' id='about'>
-			<div className='min-w-full flex flex-col-reverse justify-between items-center lg:flex-row'>
+		<div className='min-h-screen section center' id='about'>
+			<div className='flex flex-col-reverse items-center justify-between min-w-full lg:flex-row'>
 				<div>
 					<span className='inline-block my-8 text-4xl font-bold'>🙍 About Me</span>
 					<div className='max-w-xl space-y-6 text-lg'>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quaerat qui in
-							asperiores, labore iste nesciunt libero enim. At, odit!
+						<p className='leading-8'>
+							Hey It’s me Govind Bohara and I am a student at Islington college who just
+							wants to be a developer. So I have learned some programming languages to be
+							a developer.
 						</p>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, iste!</p>
+						<p>My hobbies is to code, sleep and eat. That’s the loop going in my life.</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure quos
-							corrupti magnam nulla vero nihil itaque sunt ipsam sapiente.
+							And when I am not coding I am chilling and playing games with my friends.
 						</p>
 					</div>
 					<Skills />
 					<button
 						type='button'
 						onClick={handleClick}
-						className='flex items-center gap-2 link bg-green-700 mt-12'
+						className='flex items-center gap-2 mt-12 text-white bg-green-700 link'
 					>
 						<FaFilePdf />
 						<span>Download CV</span>
@@ -35,11 +35,11 @@ export const About = () => {
 				</div>
 				<Image
 					src='/images/gole.jpg'
-					width={300}
-					height={300}
+					width={450}
+					height={450}
 					objectFit='cover'
 					alt='Profile Image'
-					className='rounded-full shadow-md flex'
+					className='flex rounded-full shadow-md'
 				/>
 			</div>
 		</div>

@@ -5,13 +5,13 @@ const socials = [
 	{
 		name: 'Github',
 		icon: FaGithub,
-		url: 'https://www.github.com/',
+		url: 'https://github.com/govindbohara',
 		color: '#f5f5f5',
 	},
 	{
 		name: 'Facebook',
 		icon: FaFacebook,
-		url: 'https://www.facebook.com',
+		url: 'https://www.facebook.com/govind.bohara.5201',
 		color: '#1877f2',
 	},
 	{

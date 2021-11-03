@@ -9,7 +9,7 @@ module.exports = {
 				gray: colors.trueGray,
 			},
 			backgroundImage: {
-				hero: 'linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.8)),url("/images/bg-hero.jpg")',
+				hero: 'linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.8)),url("/images/bg-hero.webp")',
 			},
 		},
 	},

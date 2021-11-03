@@ -8,8 +8,9 @@ export const socialLink = classnames(
 	'flex',
 	'items-center',
 	'gap-2',
-	'bg-gray-900',
+	'bg-gray-800',
 	'hover:bg-opacity-75',
+	'lg:bg-gray-900',
 	'lg:px-4',
 	'lg:py-2'
 )

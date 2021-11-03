@@ -21,7 +21,7 @@ export const ProjectListItem = ({ project }: ProjectListItemProps) => {
                 alt={name}
             />
             <div className='p-4'>
-                <h4 className='mb-4 text-2xl font-semibold'>{name}</h4>
+                <h3 className='mb-4 text-2xl font-semibold'>{name}</h3>
                 <TechStackList stacks={techStack} />
                 <p className='mt-4 text-lg text-gray-400'>{description}</p>
                 <div className='flex items-center mt-6 space-x-4'>

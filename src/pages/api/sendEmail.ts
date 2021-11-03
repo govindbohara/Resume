@@ -5,8 +5,8 @@ import { MailOptions } from 'nodemailer/lib/json-transport'
 const transport = nodeMailer.createTransport({
 	service: 'gmail',
 	auth: {
-		user: 'govindbohara0527@gmail.com',
-		pass: 'govind123256789',
+		user: process.env.GMAIL_USER,
+		pass: process.env.GMAIL_PASSWORD,
 	},
 })
 interface IRequestBody {
@@ -19,7 +19,7 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
 		const { email, subject, message } = req.body as IRequestBody
 		const mailOptions: MailOptions = {
 			from: email,
-			to: 'govindbohara76@gmail.com',
+			to: process.env.SEND_EMAIL_TO,
 			text: message,
 			subject: `New email from ${email}\n\n${subject}`,
 		}
