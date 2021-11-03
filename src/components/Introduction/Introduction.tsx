@@ -1,3 +1,5 @@
+import { Tween } from 'react-gsap'
+
 import { Social } from '~components/Social/Social'
 
 import * as styles from './introduction.styles'

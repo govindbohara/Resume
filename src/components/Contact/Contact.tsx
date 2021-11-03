@@ -21,7 +21,7 @@ const validationSchema = Yup.object().shape({
 	message: Yup.string().min(6).required(),
 })
 export const Contact = () => {
-	const { handleSubmit, errors, touched, getFieldProps } = useFormik({
+	const { handleSubmit, errors, touched, getFieldProps, resetForm } = useFormik({
 		initialValues,
 		validationSchema,
 		onSubmit: async values => {
@@ -41,6 +41,7 @@ export const Contact = () => {
 				},
 				{ style: { maxWidth: '35rem' } }
 			)
+			resetForm()
 		},
 	})
 	return (

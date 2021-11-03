@@ -7,7 +7,7 @@
 		@apply min-h-screen text-gray-200 bg-gray-900;
 	}
 	.link {
-		@apply px-4 py-2 text-lg font-semibold transition-colors duration-500 ease-out rounded-md;
+		@apply px-4 py-2 text-lg font-semibold transition-colors duration-500 ease-out rounded-md focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-gray-900;
 	}
 	/* SECTIONS */
 	.center {
